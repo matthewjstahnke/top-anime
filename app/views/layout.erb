@@ -29,6 +29,9 @@
           <li><a href="/login">Login</a></li>
           <li><a href="/signup">Signup</a></li>
         <% else %>
+          <li>Hello, <%= current_user.username %> - </li>
+          <li><a href="/animes">Top Anime</a></li>
+          <li><a href="/animes/new">Add Anime</a></li>
           <li><a href="/logout">Logout</a></li>
         <% end %>
       </ul>

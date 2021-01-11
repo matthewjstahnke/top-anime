@@ -15,11 +15,12 @@ ActiveRecord::Schema.define(version: 20210108071858) do
 
   create_table "animes", force: :cascade do |t|
     t.string   "title"
-    t.datetime "release_date"
-    t.integer  "num_of_episodes"
+    t.string   "release_year"
+    t.string   "episode_count"
     t.string   "genre"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.integer  "user_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "users", force: :cascade do |t|

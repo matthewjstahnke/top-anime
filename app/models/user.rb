@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-    has_many :anime
+    has_many :animes
 
 
     validates :username, presence: true, uniqueness: true

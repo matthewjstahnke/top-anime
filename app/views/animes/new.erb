@@ -1,0 +1,22 @@
+<h3> Create Anime <h3>
+
+<form action="/animes" method="post">
+    <div class="input-field">
+        <input type="text" name="anime[title]" id="title">
+        <label for="title">Title</label>
+    </div>
+    <div class="input-field">
+        <input type="text" name="anime[release_year]" id="release_year">
+        <label for="release_year">Release Year</label>
+    </div>
+    <div class="input-field">
+        <input type="text" name="anime[episode_count]" id="episode_count">
+        <label for="episode_count">Number of Episodes</label>
+    </div>
+    <div class="input-field">
+        <input type="text" name="anime[genre]" id="genre">
+        <label for="genre">Genre</label>
+    </div>
+
+    <input type="submit" value="Create Anime" class="btn purple darken-3">
+</form>
