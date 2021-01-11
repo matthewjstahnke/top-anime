@@ -8,9 +8,9 @@
               <p>Year of Release - <%= anime.release_year %></p>
             </div>
             <div class="card-action">
-              <a href="#">More Info</a>
+              <a href="/animes/<%= anime.id %>">More Info</a>
               <% if anime.user == current_user %>
-                    <a href="#">Edit</a>
+                    <a href="/anime/<% anime.id %>/edit">Edit</a>
                 <% end %>
             </div>
       </div>
