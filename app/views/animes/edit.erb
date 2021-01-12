@@ -1,4 +1,4 @@
-<h3>Edit <%= @anime.title %></h3>
+<h3>Edit - <%= @anime.title %></h3>
 
 <form action="/animes/<%= @anime.id %>" method="post">
     <input type="hidden" name="_method" value="patch">
@@ -19,5 +19,10 @@
         <label for="genre">Genre</label>
     </div>
 
-    <input type="submit" value="Edit Anime" class="btn purple darken-3">
+    <input type="submit" value="Update Anime" class="btn purple darken-3">
+</form>
+<br>
+<form action="/animes/<%= @anime.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete Anime" class="btn red darken-3">
 </form>
