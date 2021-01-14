@@ -5,6 +5,7 @@ class AnimesController < ApplicationController
         erb :'animes/index'
     end
     get '/animes/new' do
+        redirect_if_not_logged_in
         erb :'animes/new'      
     end
 
